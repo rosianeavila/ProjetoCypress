@@ -1,0 +1,14 @@
+{
+  "name": "projetocypress",
+  "version": "1.0.0",
+  "description": "Primeiro Projeto Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Rosiane de Avila",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  }
+}
