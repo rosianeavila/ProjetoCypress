@@ -1,9 +1,10 @@
 import { expect } from "chai";
+import cypress from "cypress";
 
 describe('Login e registro de usuarios alura pic', () => {
 
     beforeEach(() => {
-      cy.visit('https://alura-fotos.herokuapp.com')
+      cy.visit('/')
 
      })
 
@@ -39,7 +40,7 @@ describe('Login e registro de usuarios alura pic', () => {
     })
 
     it('fazer login do usuario invalido', () =>{
-        cy.login('rosi', '123')
+        cy.login(Cypress.env('userName'), Cypress.env('password'))
         cy.on('windows:alert', (str) => {
             expect(str).to.equal('Invalid user name or password')
         })

@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   projectId: 'f5vfjg',
+  basicURL:"https://alura-fotos.herokuapp.com",
   reporter: "mochawesome",
 
   reporterOptions: {
